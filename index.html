@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>hw26_fep</title>
+</head>
+
+<body>
+    <div class="row align-items-stretch">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card card-deck">
+                <div class="card-body">
+                    <h5 class="card-title">Bootstrap</h5>
+                    <p class="card-text">- Вивести на сторінку кнопку (застосувати стилі бутстрапа) при натисканні на
+                        яку відкривається модальне вікно з деякими даними <br>
+                        - Повісити на цю кнопку Tooltip із довільним текстом
+                    </p>
+                    <button type="button" class="btn btn-lg btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Модальне вікно</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Це модалне вікно з деякими
+                                        даними</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">Натисніть Х або CLOSE щоб закрити вікно</div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-text">- Створити ще одну кнопку, при натисканні на яку показується бутстрапівський
+                        алерт. При повторному натисканні -
+                        ховається.</p>
+                    <button type="button" class="btn btn-lg btn-primary">Алєрт</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 card-deck">
+            <div class="card card-deck">
+                <div class="card-body">
+                    <h5 class="card-title">Moment.js</h5>
+                    <p class="card-text">Вивести дату вашого народження в довільному форматі з використанням
+                        moment.js</p>
+                    <button type="button" class="btn btn-lg btn-primary">День народження</button>
+                    <p class="card-text">Отримати від користувача дату його народження в певному форматі і через
+                        moment.js перетворити в інший формат<br>
+                        - реалізувати перевірку (за допомогою регулярних виразів) на коректність користувацького
+                        введення (перевірити, що формат
+                        введення відповідає очікуванням)<br>
+                        - якщо формат не відповідає - виводимо помилку (використовуємо bootstrap стилі)</p>
+                    <label for="form-control">Введіть дату вашого народження</label>
+                    <input class="form-control form-control-lg" name="form-control" type="text" placeholder="ДД-ММ-РРРР"
+                        aria-label=".form-control-lg example">
+                    <div class="alert alert-danger" role="alert">Невірний формат дати</div>
+                    <button type="button" class="btn btn-lg btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
